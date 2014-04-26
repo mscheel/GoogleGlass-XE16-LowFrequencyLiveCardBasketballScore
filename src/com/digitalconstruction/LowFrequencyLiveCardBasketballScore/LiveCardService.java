@@ -12,8 +12,6 @@ import android.widget.RemoteViews;
 import com.google.android.glass.timeline.LiveCard;
 import com.google.android.glass.timeline.LiveCard.PublishMode;
 
-import com.digitalconstruction.LowFrequencyLiveCardBasketballScore.R;
-
 public class LiveCardService extends Service {
 
 	private static final String LIVE_CARD_TAG = "LiveCardDemo";
