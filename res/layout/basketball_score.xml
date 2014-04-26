@@ -1,3 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
     <TextView
         android:id="@+id/home_team_name_text_view"
         android:layout_width="249px"
@@ -41,3 +47,5 @@
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="33px"
         android:textSize="26px" />
+
+</RelativeLayout>
