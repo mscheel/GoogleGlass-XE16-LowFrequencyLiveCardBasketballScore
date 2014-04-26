@@ -4,7 +4,6 @@ import java.util.Random;
 
 	import com.google.android.glass.timeline.LiveCard;
 	import com.google.android.glass.timeline.LiveCard.PublishMode;
-	import com.google.android.glass.timeline.TimelineManager;
 
 	import android.app.PendingIntent;
 	import android.app.Service;
@@ -17,7 +16,6 @@ import java.util.Random;
 
 	    private static final String LIVE_CARD_TAG = "LiveCardDemo";
 
-	    private TimelineManager mTimelineManager;
 	    private LiveCard mLiveCard;
 	    private RemoteViews mLiveCardView;
 
@@ -32,7 +30,6 @@ import java.util.Random;
 	    @Override
 	    public void onCreate() {
 	        super.onCreate();
-	        mTimelineManager = TimelineManager.from(this);
 	        mPointsGenerator = new Random();
 	    }
 
@@ -41,7 +38,7 @@ import java.util.Random;
 	        if (mLiveCard == null) {
 
 	            // Get an instance of a live card
-	            mLiveCard = mTimelineManager.createLiveCard(LIVE_CARD_TAG);
+	            mLiveCard = new LiveCard(this, LIVE_CARD_TAG);
 
 	            // Inflate a layout into a remote view
 	            mLiveCardView = new RemoteViews(getPackageName(),
