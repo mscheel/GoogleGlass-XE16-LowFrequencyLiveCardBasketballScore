@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginBottom="33px"
+        android:layout_marginBottom="33dp"
         android:textSize="26px" />
 
 </RelativeLayout>
