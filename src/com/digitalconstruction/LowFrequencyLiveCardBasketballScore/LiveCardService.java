@@ -99,9 +99,10 @@ public class LiveCardService extends Service {
 		 */
 		public void run() {
 			if (!isStopped()) {
+				
 				// Generate fake points.
-				homeScore += mPointsGenerator.nextInt(3);
-				awayScore += mPointsGenerator.nextInt(3);
+				homeScore = mPointsGenerator.nextInt(120);
+				awayScore = homeScore - (homeScore/10); //Celtics should be ahead by 10%, Larry Legend forever!
 
 				// Update the remote view with the new scores.
 				mLiveCardView.setTextViewText(R.id.home_score_text_view,
