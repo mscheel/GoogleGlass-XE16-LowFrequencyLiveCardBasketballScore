@@ -1,0 +1,43 @@
+    <TextView
+        android:id="@+id/home_team_name_text_view"
+        android:layout_width="249px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textSize="40px" />
+
+    <TextView
+        android:id="@+id/away_team_name_text_view"
+        android:layout_width="249px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:textSize="40px" />
+
+    <TextView
+        android:id="@+id/away_score_text_view"
+        android:layout_width="249px"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/awayTeamNameTextView"
+        android:layout_below="@+id/awayTeamNameTextView"
+        android:gravity="center"
+        android:textSize="70px" />
+
+    <TextView
+        android:id="@+id/home_score_text_view"
+        android:layout_width="249px"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/awayScoreTextView"
+        android:layout_alignBottom="@+id/awayScoreTextView"
+        android:layout_alignLeft="@+id/homeTeamNameTextView"
+        android:gravity="center"
+        android:textSize="70px" />
+
+    <TextView
+        android:id="@+id/footer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="33px"
+        android:textSize="26px" />
