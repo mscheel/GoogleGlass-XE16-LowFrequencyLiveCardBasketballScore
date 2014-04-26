@@ -1,5 +1,8 @@
 <resources>
 
     <string name="app_name">Basketball Score</string>
+    <string name="home_team">Boston Celtics</string>
+    <string name="away_team">Los Angeles Lakers</string>
+    <string name="game_quarter">4th quarter</string>
 
 </resources>

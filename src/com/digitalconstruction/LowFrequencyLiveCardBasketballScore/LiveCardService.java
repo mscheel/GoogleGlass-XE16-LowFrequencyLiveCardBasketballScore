@@ -2,15 +2,17 @@ package com.digitalconstruction.LowFrequencyLiveCardBasketballScore;
 
 import java.util.Random;
 
-import com.google.android.glass.timeline.LiveCard;
-import com.google.android.glass.timeline.LiveCard.PublishMode;
-
 import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.IBinder;
 import android.widget.RemoteViews;
+
+import com.google.android.glass.timeline.LiveCard;
+import com.google.android.glass.timeline.LiveCard.PublishMode;
+
+import com.digitalconstruction.LowFrequencyLiveCardBasketballScore.R;
 
 public class LiveCardService extends Service {
 
@@ -47,11 +49,11 @@ public class LiveCardService extends Service {
 			homeScore = 0;
 			awayScore = 0;
 			mLiveCardView.setTextViewText(R.id.home_team_name_text_view,
-					getString(R.id.home_team));
+					getString(R.string.home_team));
 			mLiveCardView.setTextViewText(R.id.away_team_name_text_view,
-					getString(R.id.away_team));
+					getString(R.string.away_team));
 			mLiveCardView.setTextViewText(R.id.footer_text,
-					getString(R.id.game_quarter));
+					getString(R.string.game_quarter));
 
 			// Set up the live card's action with a pending intent
 			// to show a menu when tapped
